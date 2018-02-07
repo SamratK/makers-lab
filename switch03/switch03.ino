@@ -46,7 +46,7 @@ bool connectToWiFi() {
 
 	int count = 0;
 
-	WiFi.begin("arriotgateway", "9885104058");
+	WiFi.begin("", "");
 
 	while (WiFi.status() != WL_CONNECTED) {
 		if(count++ > MAX_CONNECTION_ATTEMPTS) 
